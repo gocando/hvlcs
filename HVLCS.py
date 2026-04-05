@@ -1,3 +1,5 @@
+import sys
+
 def hvlcs(A, B, val):
     m, n = len(A), len(B)
     M = [[0] * (n + 1) for _ in range(m + 1)]
@@ -21,8 +23,17 @@ def backtrack(M, A, B):
             j -= 1
     return ''.join(reversed(seq))
 
-val = {'e': 2, 'r': 4, 'g': 6}
-A, B = "gree", "reger"
-M = hvlcs(A, B, val)
-print(M[len(A)][len(B)])
-print(backtrack(M, A, B))
+def main():
+    input_file  = input("Enter input file:  ")
+    output_file = input("Enter output file: ")
+    lines = open(input_file).read().split('\n')
+    k = int(lines[0])
+    val = {lines[i+1].split()[0]: int(lines[i+1].split()[1]) for i in range(k)}
+    A, B = lines[k+1], lines[k+2]
+    M = hvlcs(A, B, val)
+    seq = backtrack(M, A, B)
+    out = f"{M[len(A)][len(B)]}\n{seq}\n"
+    open(output_file, 'w').write(out)
+    print(out)
+
+main()
