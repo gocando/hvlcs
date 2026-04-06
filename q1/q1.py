@@ -3,7 +3,7 @@ import sys
 sys.path.append('../src')
 from HVLCS import hvlcs, backtrack
 
-times, lengths, results = [], [], []
+results = []
 
 for i in range(1, 11):
     lines = open(f"input{i}.in").read().split('\n')
@@ -19,8 +19,7 @@ for i in range(1, 11):
         runs.append(time.time() - start)
     elapsed = sum(runs) / 3
 
-    size = len(A) * len(B)
-    results.append(f"File {i}: |A|={len(A)} |B|={len(B)} size={size}, value={M[len(A)][len(B)]}, seq={seq}, time={elapsed:.6f}s")
+    results.append(f"File {i}: length={len(A)}, value={M[len(A)][len(B)]}, seq={seq}, time={elapsed:.6f}s")
     print(results[-1])
 
 with open("results.txt", 'w') as f:

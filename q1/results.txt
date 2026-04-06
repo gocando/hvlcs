@@ -1,10 +1,10 @@
-File 1: |A|=8 |B|=9 size=72, value=60, seq=elephn, time=0.000023s
-File 2: |A|=9 |B|=9 size=81, value=95, seq=lorithm, time=0.000020s
-File 3: |A|=14 |B|=14 size=196, value=127, seq=informatics, time=0.000040s
-File 4: |A|=18 |B|=17 size=306, value=76, seq=dyaorm, time=0.000060s
-File 5: |A|=17 |B|=17 size=289, value=95, seq=alignment, time=0.000054s
-File 6: |A|=20 |B|=21 size=420, value=128, seq=ribonucleicacid, time=0.000076s
-File 7: |A|=20 |B|=21 size=420, value=164, seq=structures, time=0.000074s
-File 8: |A|=25 |B|=26 size=650, value=247, seq=roesynthesisross, time=0.000113s
-File 9: |A|=28 |B|=28 size=784, value=173, seq=genomesequencing, time=0.000133s
-File 10: |A|=49 |B|=49 size=2401, value=384, seq=dynamicprogrammingsequencealignment, time=0.000383s
+File 1: length=25, value=104, seq=oriuecix, time=0.000124s
+File 2: length=26, value=177, seq=rosomestrtna, time=0.000126s
+File 3: length=31, value=158, seq=nicsequencealign, time=0.000163s
+File 4: length=36, value=145, seq=oyribosely, time=0.000217s
+File 5: length=39, value=194, seq=omesuenalohmisy, time=0.000248s
+File 6: length=49, value=337, seq=bioinformaticssequencealignment, time=0.000574s
+File 7: length=59, value=435, seq=proteinsynthesisribosomesbiology, time=0.000869s
+File 8: length=69, value=418, seq=genomesequencingalgorithmicsbiologydata, time=0.001295s
+File 9: length=85, value=518, seq=bioinformaticssequencealignmentdyroneisysis, time=0.001907s
+File 10: length=99, value=590, seq=enomsbiooaticsequencealignmentdynamicprogrammingenoms, time=0.002558s
