@@ -85,8 +85,9 @@ OPT(0, j) = 0    for all j
 
 **Recurrence:**
 ```
-OPT(i, j) = v(A[i]) + OPT(i−1, j−1)   if A[i] = B[j]
-          = max( OPT(i−1, j), OPT(i, j−1) )   if A[i] != B[j]
+OPT(i, j) = 0                                   if i = 0 or j = 0
+          = v(A[i]) + OPT(i−1, j−1)             if A[i] = B[j]
+          = max( OPT(i−1, j), OPT(i, j−1) )     if A[i] != B[j]
 ```
 
 **Why it's correct:** At each position (i, j), if A[i] equals B[j] we include that character, gain its value, 
